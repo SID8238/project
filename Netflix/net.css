@@ -49,16 +49,23 @@ nav{
 
 .lang
 {
-    padding: 3px;
-    background-color: rgb(42, 36, 36);
+    padding: 3px 10px;
+    /* background-color: rgb(42, 36, 36); */
     color: white;
+    border-radius: 3px;
+    border: 2px solid rgb(168, 156, 156);
+    background-color: rgba(23, 23, 23,0.7);
 }
 
 .sign
 {
     background-color: red;
-    padding: 5px 15px;
-    border: 2px solid black; 
+    padding: 3px 10px;
+    border-radius: 3px;
+    border: 2px solid red; 
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .text
@@ -74,7 +81,30 @@ nav{
 .email
 {
     margin-top: 25px;
-    
+    gap: 10px;
+}
+
+.email input{
+    padding: 5px 5px;
+    background-color: rgba(23, 23, 23,0.7);
+    border: 2px solid rgb(250, 248, 248);
+    color: rgb(223, 223, 223);
+    font-size: 1.5rem;
+    border-radius: 3px;
+    z-index: 15;
+}
+
+.email button
+{
+    font-size: 1.5rem;
+    z-index: 15;
+    background-color: red;
+    color: white;
+    padding: 5px 5px;
+    border: 2px solid red;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .text> :nth-child(1),.text> :nth-child(2)
@@ -97,3 +127,12 @@ nav{
     color: white;
     padding-top: 3vh;
 }
+
+.separation
+{
+    width: 100%;
+    background-color: gray;
+    height: 5px;
+}
+
+
