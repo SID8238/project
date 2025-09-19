@@ -1,0 +1,99 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+
+body{
+    background-color: black;
+}
+
+.main
+{
+    background-image: url(image/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    height : 70vh;
+    background-size: max(100vw,1200px);
+}
+.box
+{
+    opacity: 0.69;
+    height : 70vh;
+    position : absolute;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.net
+{
+    z-index: 80;
+    position: relative;
+    width: 100px;
+}
+
+.icons
+{
+    position: relative;
+    z-index: 50;
+}
+
+.lang
+{
+    padding: 3px;
+    background-color: rgb(42, 36, 36);
+    color: white;
+}
+
+.sign
+{
+    background-color: red;
+    padding: 5px 15px;
+    border: 2px solid black; 
+}
+
+.text
+{
+    position: relative;
+    top : 0;
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.email
+{
+    margin-top: 25px;
+    
+}
+
+.text> :nth-child(1),.text> :nth-child(2)
+{
+    font-size: 4.3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.text> :nth-child(3)
+{
+    font-size: 1.8rem;
+    color: white;
+    padding-top: 3vh;
+}
+
+.text> :nth-child(4)
+{
+    font-size: 1.3rem;
+    color: white;
+    padding-top: 3vh;
+}
