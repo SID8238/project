@@ -13,13 +13,13 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
-    height : 70vh;
+    height : 80vh;
     background-size: max(100vw,1200px);
 }
 .box
 {
     opacity: 0.69;
-    height : 70vh;
+    height : 80vh;
     position : absolute;
     top: 0;
     width: 100%;
@@ -50,7 +50,6 @@ nav{
 .lang
 {
     padding: 3px 10px;
-    /* background-color: rgb(42, 36, 36); */
     color: white;
     border-radius: 3px;
     border: 2px solid rgb(168, 156, 156);
@@ -72,7 +71,7 @@ nav{
 {
     position: relative;
     top : 0;
-    margin-top: 40px;
+    margin-top: 50px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -135,4 +134,114 @@ nav{
     height: 5px;
 }
 
+.first
+{
+    color: white;
+    margin: auto;
+    display: flex;
+    max-width: 70vw;
+    justify-content: center;
+    align-items: center;
+}
+.image
+{
+    position:relative;
+}
 
+.image img{
+    width:555px;
+    position: relative;
+    z-index: 10;
+}
+
+.image video
+{
+    position: absolute;
+    top: 51px;
+    right:0;
+    width:555px;
+}
+
+.first{
+    display: flex;
+    padding: 34px 0;
+}
+.first>div
+{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.first>div>p
+{
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.faq
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+.faq1
+{
+    display: flex;
+    color: white;
+    border: 2px solid grey;
+    background-color: rgb(43 42 42);
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 5vh;
+    font-size: 2rem;
+    padding: 15px 15px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq1:hover{
+    background-color: rgb(150, 150, 150);
+}
+
+.contact {
+    padding: 15px 0;
+    color: #b3b3b3;
+    font-size: 1rem;
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    max-width: 80vw;
+    margin: 20px auto;
+    padding: 20px 0;
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.con a {
+    color: #b3b3b3;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.con a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    max-width: 80vw;
+    margin: auto;
+    padding: 40px 0;
+    color: white;
+}
