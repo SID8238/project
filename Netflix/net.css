@@ -1,33 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
 
-*{
-    margin : 0;
-    padding : 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body{
+body {
     background-color: black;
 }
 
-.main
-{
+.main {
     background-image: url(image/bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
-    height : 644px;
-    background-size: max(100vw,1200px);
+    height: 644px;
+    background-size: max(100vw, 1200px);
 }
-.box
-{
+
+.box {
     opacity: 0.69;
-    height : 644px;
-    position : absolute;
+    height: 644px;
+    position: absolute;
     top: 0;
     width: 100%;
     background-color: black;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,58 +36,52 @@ nav{
     margin: auto;
 }
 
-.net
-{
+.net {
     z-index: 80;
     position: relative;
     width: 100px;
 }
 
-.icons
-{
+.icons {
     position: relative;
     z-index: 50;
 }
 
-.lang
-{
+.lang {
     padding: 3px 10px;
     color: white;
     border-radius: 3px;
     border: 2px solid rgb(168, 156, 156);
-    background-color: rgba(23, 23, 23,0.7);
+    background-color: rgba(23, 23, 23, 0.7);
 }
 
-.sign
-{
+.sign {
     background-color: red;
     padding: 3px 10px;
     border-radius: 3px;
-    border: 2px solid red; 
+    border: 2px solid red;
     color: white;
     cursor: pointer;
     font-weight: bold;
 }
 
-.text
-{
+.text {
     position: relative;
-    top : 0;
+    top: 0;
     margin-top: 50px;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
-.email
-{
+.email {
     margin-top: 25px;
     gap: 10px;
 }
 
-.email input{
+.email input {
     padding: 5px 5px;
-    background-color: rgba(23, 23, 23,0.7);
+    background-color: rgba(23, 23, 23, 0.7);
     border: 2px solid rgb(250, 248, 248);
     color: rgb(223, 223, 223);
     font-size: 1.5rem;
@@ -95,8 +89,7 @@ nav{
     z-index: 15;
 }
 
-.email button
-{
+.email button {
     font-size: 1.5rem;
     z-index: 15;
     background-color: red;
@@ -108,92 +101,79 @@ nav{
     cursor: pointer;
 }
 
-.text> :nth-child(1),.text> :nth-child(2)
-{
+.text> :nth-child(1),
+.text> :nth-child(2) {
     font-size: 4.3rem;
     color: white;
     font-weight: bold;
 }
 
-.text> :nth-child(3)
-{
+.text> :nth-child(3) {
     font-size: 1.8rem;
     color: white;
     padding-top: 3vh;
 }
 
-.text> :nth-child(4)
-{
+.text> :nth-child(4) {
     font-size: 1.3rem;
     color: white;
     padding-top: 3vh;
 }
 
-.separation
-{
+.separation {
     width: 100%;
     background-color: gray;
     height: 5px;
 }
 
-.first
-{
+.first {
     color: white;
     margin: auto;
     display: flex;
     max-width: 70vw;
     justify-content: center;
     align-items: center;
-}
-.image
-{
-    position:relative;
+    padding: 34px 0;
 }
 
-.image img{
-    width:555px;
+.image {
+    position: relative;
+}
+
+.image img {
+    width: 555px;
     position: relative;
     z-index: 10;
 }
 
-.image video
-{
+.image video {
     position: absolute;
     top: 51px;
-    right:0;
-    width:555px;
+    right: 0;
+    width: 555px;
 }
 
-.first{
-    display: flex;
-    padding: 34px 0;
-}
-.first>div
-{
+.first>div {
     font-size: 3rem;
     font-weight: bold;
 }
 
-.first>div>p
-{
+.first>div>p {
     font-size: 1.1rem;
     margin-top: 20px;
 }
 
-.faq
-{
+.faq {
     text-align: center;
     font-weight: bold;
     font-size: 3.5rem;
     color: white;
-    justify-content: center;
-    align-items: center;
     margin: 25px;
 }
 
-.faq1
-{
+.faq1 {
     display: flex;
+    flex-direction: column;   
     color: white;
     border: 2px solid grey;
     background-color: rgb(43 42 42);
@@ -202,11 +182,23 @@ nav{
     margin-bottom: 5vh;
     font-size: 2rem;
     padding: 15px 15px;
-    justify-content: space-between;
     cursor: pointer;
 }
 
-.faq1:hover{
+.faq-quest {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer {
+    margin-top: 10px;
+    border-top: 1px solid grey;
+    padding: 10px 0;
+    display: none;  
+}
+
+.faq1:hover {
     background-color: rgb(150, 150, 150);
 }
 
@@ -218,7 +210,7 @@ nav{
 
 .foot {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     max-width: 80vw;
     margin: 20px auto;
@@ -249,47 +241,39 @@ footer {
 }
 
 @media screen and (max-width:1300px) {
-    nav
-    {
+    nav {
         max-width: 90vw;
     }
-    
-    .first
-    {
+
+    .first {
         flex-wrap: wrap;
     }
 
-    .image img
-    {
+    .image img {
         width: 305px;
     }
 
-    .image video
-    {
+    .image video {
         width: 305px;
     }
 
-    .text> :nth-child(1)
-    {
+    .text> :nth-child(1) {
         font-size: 32px;
     }
 
-    .text> :nth-child(2)
-    {
+    .text> :nth-child(2) {
         font-size: 32px;
     }
 
-    .text> :nth-child(3)
-    {
+    .text> :nth-child(3) {
         font-size: 18px;
     }
 
-    .text> :nth-child(4)
-    {
+    .text> :nth-child(4) {
         font-size: 12px;
     }
 
-    .email{
+    .email {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -297,23 +281,21 @@ footer {
         gap: 26px;
     }
 
-    .faq{
+    .faq {
         text-align: center;
         font-size: 32px;
     }
 
-    footer
-    {
+    footer {
         max-width: 90vw;
         padding: 75px 0;
     }
 
-    .con
-    {
+    .con {
         align-items: center;
     }
 
-    .foot{
+    .foot {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 25px;
